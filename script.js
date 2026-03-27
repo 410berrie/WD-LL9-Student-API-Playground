@@ -45,7 +45,7 @@ const output = document.getElementById("output");
 fetch(API_URL)
     .then(response => response.json())
     .then(data => {
-        output.innerText = data.fact; // TODO: Change 'fact' to match your API's data structure
+        output.innerText = data.answer; // TODO: Change 'fact' to match your API's data structure
     });
 
 
@@ -58,11 +58,12 @@ fetch(API_URL)
 
 const button = document.getElementById("fetch-btn");
 
+
 button.addEventListener("click", function() {
     fetch(API_URL)
         .then(response => response.json())
         .then(data => {
-            output.innerText = data.fact; // TODO: Change 'fact' to match your API's data structure
+            output.innerText = data.answer; // TODO: Change 'fact' to match your API's data structure
         });
 });
 
@@ -78,7 +79,7 @@ button.addEventListener("click", function() {
         .then(data => {
             output.innerHTML = `
                 <img src="${data.image}" width="300">
-                <p>${data.fact}</p>
+                <p>${data.answer}</p>
             `;
         });
 });
