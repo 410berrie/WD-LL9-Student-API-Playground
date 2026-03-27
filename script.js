@@ -59,13 +59,13 @@ fetch(API_URL)
 const button = document.getElementById("fetch-btn");
 
 
-button.addEventListener("click", function() {
-    fetch(API_URL)
-        .then(response => response.json())
-        .then(data => {
-            output.innerText = data.answer; // TODO: Change 'fact' to match your API's data structure
-        });
-});
+// button.addEventListener("click", function() {
+//     fetch(API_URL)
+//         .then(response => response.json())
+//         .then(data => {
+//             output.innerText = data.answer; // TODO: Change 'fact' to match your API's data structure
+//         });
+// });
 
 // ========================================
 // STEP 7: BONUS - Add Image Support (if your API includes images)
